@@ -1,0 +1,14 @@
+#include <stdint.h>
+#include <webanpick/utilities/git_revision.hpp>
+
+#define WEBANPICK_GIT_REVISION_SHA "@WEBANPICK_GIT_REVISION_SHA@"
+#define WEBANPICK_GIT_REVISION_UNIX_TIMESTAMP @WEBANPICK_GIT_REVISION_UNIX_TIMESTAMP@
+#define WEBANPICK_GIT_REVISION_DESCRIPTION "@WEBANPICK_GIT_REVISION_DESCRIPTION@"
+
+namespace webanpick { namespace utilities {
+
+const char* const git_revision_sha = WEBANPICK_GIT_REVISION_SHA;
+const uint32_t git_revision_unix_timestamp = WEBANPICK_GIT_REVISION_UNIX_TIMESTAMP;
+const char* const git_revision_description = WEBANPICK_GIT_REVISION_DESCRIPTION;
+
+} } // end namespace webanpick::utilities
